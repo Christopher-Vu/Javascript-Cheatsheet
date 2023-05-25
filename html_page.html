@@ -33,13 +33,17 @@
         alert("You opened the website")
         console.log("This statement will be shown in the console")
 
-        // let {variable name} = value
-        let variable1 = 25;
+        // var {variable name} = value
+        var variable1 = 25;
         // reassigning a variable does not require "let"
         variable1 = 50;
         // template strings are used as shown below (using backticks `` instead of quotes "" '')
         console.log(`Variable1 is equal to ${variable1}`)
         // +=, -=, *=, /=, ++, and -- are all applicable
         variable1 += 2; variable1 -= 2; variable1 *= 2; variable1 /= 2; variable1 ++; variable1 --;
+
+        //let: only available inside the scope it's declared, like in "for" loop, 
+        //var: accessed outside of the scope
+        console.log(typeof variable1)
     </script>
 </html>
