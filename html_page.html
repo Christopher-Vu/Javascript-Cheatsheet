@@ -46,6 +46,8 @@
         //var: accessed outside of the scope
         console.log(typeof variable1)
         var bool = true; // Booleans are all lowercase
+        
+        // const values stay the same throughout the program
         const randomNum = Math.random();
 
         // if conditions are contained within parenthesis
@@ -61,12 +63,25 @@
         // || is or
         var num1 = 0;
         var num2 = 20;
-        if(firstnumber > 20 || secondnumber< 10) {
+        if(num1 > 20 || num2 < 10) {
             console("Si");
         }
 
         // == is equality with type conversion, === is equality without type conversion
         console.log(2 + 3 === 5);
-        console.log("5" == 5)
+        console.log("0" == 0); 
+
+        // functions are pretty self explanatory; params go in the parenthesis
+        function example_function(arg) {
+            console.log(arg);
+            return arg + "world"
+        }
+
+        // call the function
+        example_function("Hello");
+        let return_value = example_function("Hello ");
+        console.log(return_value);
+
+
     </script>
 </html>
