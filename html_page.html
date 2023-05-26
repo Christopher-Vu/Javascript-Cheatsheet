@@ -79,9 +79,25 @@
 
         // call the function
         example_function("Hello");
+        // Utilizing the return statement
         let return_value = example_function("Hello ");
         console.log(return_value);
 
+        // Arrays work pretty much the same as python without the step and end stuff
+        var arr = ["String1", "string2", "string3", "stirng4"];
+        console.log(arr[0]);
 
+        // loops take 3 arguments; a variable, a condition to continue looping, and what to do on each iteration
+        for (let i=0; i < 3; i++) {
+            console.log(i);
+        }
+
+        for (let i=0; i<arr.length; i++) {
+            console.log(i);
+        }
+
+        for (let i=2; i<100; i=i**2) {
+            console.log(i);
+        }
     </script>
 </html>
