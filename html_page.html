@@ -99,5 +99,46 @@
         for (let i=2; i<17; i=i**2) {
             console.log(i);
         }
+
+        // objects are shown below
+        const product = {
+            name: 'socks',
+            price: 1090
+        };
+
+        // Values can be accessed with .value or ['value']
+        console.log(product.name);
+        console.log(product.price);
+        console.log(product['name']);
+
+        // dot notation will return an error if a value doesn't exist
+        try {
+            console.log(product.nonexistent-value);
+        } catch {
+            console.log("Value Error");
+        }
+
+        // bracket notation will return undefined
+        console.log(product["Nonexistent-value"]);
+
+        // will return all info about the object
+        console.log(product);
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1-day', //brackets can also define obj values  
+            // nested object; self explan
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+
+            function_name: function function1() {
+                console.log("This is an object function");
+            }
+        };
+
+        console.log(product.rating.count);
+        product2.function_name();
     </script>
 </html>
